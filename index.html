@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welding Digitization Solutions | SmartWeld</title>
-  <meta name="description" content="Welding Digitization Solutions for closed-loop robotic welding, ROS-based control, AI-enabled monitoring, and in-process adaptive control." />
+  <meta
+    name="description"
+    content="Welding Digitization Solutions for closed-loop robotic welding, ROS-based control, AI-enabled monitoring, and in-process adaptive control."
+  />
   <style>
     :root {
       --bg: #f6f3ea;
@@ -22,6 +25,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -32,8 +36,15 @@
       line-height: 1.6;
     }
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .container {
       width: min(100% - 36px, var(--max));
@@ -44,9 +55,9 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(248, 245, 238, 0.85);
+      background: rgba(248, 245, 238, 0.88);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(35,35,35,0.05);
+      border-bottom: 1px solid rgba(35, 35, 35, 0.05);
     }
 
     .nav-inner {
@@ -66,24 +77,18 @@
     }
 
     .brand-mark {
-      width: 54px;
-      height: 54px;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
-      background: #ffffff;
-      border: 1px solid #e9e1d2;
-      box-shadow: var(--shadow);
-      display: grid;
-      place-items: center;
       overflow: hidden;
       flex-shrink: 0;
+      background: transparent;
     }
 
     .brand-mark img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      padding: 2px;
-      background: #fff;
     }
 
     .brand-copy {
@@ -104,6 +109,15 @@
       flex-wrap: wrap;
       gap: 28px;
       align-items: center;
+    }
+
+    .links a {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: var(--text);
     }
 
     .nav-right {
@@ -134,13 +148,6 @@
       object-fit: contain;
       flex-shrink: 0;
     }
-
-    .links a {
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .links a:hover { color: var(--text); }
 
     .cta-btn {
       background: #0f0f10;
@@ -186,7 +193,9 @@
       letter-spacing: -0.03em;
     }
 
-    .hero h1 .accent { color: var(--gold); }
+    .hero h1 .accent {
+      color: var(--gold);
+    }
 
     .lead {
       max-width: 62ch;
@@ -329,7 +338,8 @@
       font-size: 1.3rem;
     }
 
-    .card p, .card li {
+    .card p,
+    .card li {
       color: var(--muted);
     }
 
@@ -383,7 +393,10 @@
       border-top: 1px solid rgba(35,35,35,0.08);
     }
 
-    .list li:first-child { border-top: none; padding-top: 0; }
+    .list li:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
 
     .roadmap {
       display: grid;
@@ -413,7 +426,9 @@
       box-shadow: var(--shadow);
     }
 
-    .contact-band p { color: rgba(255,255,255,0.75); }
+    .contact-band p {
+      color: rgba(255,255,255,0.75);
+    }
 
     .contact-band .btn-light {
       color: #fff;
@@ -431,6 +446,7 @@
       .nav-right {
         justify-content: flex-start;
       }
+
       .hero-grid,
       .grid-2,
       .grid-3,
@@ -464,22 +480,24 @@
     <div class="container nav-inner">
       <div class="brand">
         <div class="brand-mark">
-          <img src="data:image/png;base64,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" alt="UET Taxila logo" />
+          <img src="assets/images/uet-taxila-logo.png.png" alt="UET Taxila logo" />
         </div>
         <div class="brand-copy">
           <div>SmartWeld</div>
           <small>UET Taxila</small>
         </div>
       </div>
+
       <nav class="links">
         <a href="#features">Features</a>
         <a href="#about">About</a>
         <a href="#platforms">Platforms</a>
         <a href="#contact">Contact</a>
       </nav>
+
       <div class="nav-right">
         <div class="funded-pill">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAAEsCAYAAAB6i2IHAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nO3de5Ac5Xn38fd3V1d39/T0dM+zJVuWbMk4lm3HshM7i2N7Y2wssW1jE0f2yME0I8aZ2KTkYDPmJGQY2nTmJMbEid0mJi9JMvExOWt8cZYQk7kxmQ9jE4jHxzAWs5nE2LbjxI4t25Jly5I2W7ZsWbJlS7Y9T3dXd1f3j4bZ9Q8N+3V1V1f9fL7n3O9VdXV1dV9+3vPee6eK4lCk8qRCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIf4/fB9P1mVZ7m7hYAAAAABJRU5ErkJggg==" alt="HEC logo" />
+          <img src="assets/images/hec-logo.png.png" alt="HEC logo" />
           <span>HEC Funded</span>
         </div>
         <a href="#contact" class="cta-btn">Get Started ↗</a>
@@ -492,23 +510,30 @@
       <div class="container hero-grid">
         <div>
           <div class="pill">● Next-Gen Welding Intelligence</div>
+
           <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:18px;">
             <div class="funded-pill">
-              <img src="assets/images/hec-logo.png" alt="HEC logo" />
+              <img src="assets/images/hec-logo.png.png" alt="HEC logo" />
               <span>HEC funded project foundation</span>
             </div>
           </div>
+
           <h1>
             Welding Digitization Solutions for
             <span class="accent">Productivity, Quality Compliance & Cost Efficiency</span>
           </h1>
+
           <p class="lead">
-            Closed-loop robotic welding, in-process monitoring, ROS-based control, AI-assisted defect detection, and adaptive process intelligence built for modern welding operations, pilot validation, and industrial collaboration.
+            Closed-loop robotic welding, in-process monitoring, ROS-based control,
+            AI-assisted defect detection, and adaptive process intelligence built for
+            modern welding operations, pilot validation, and industrial collaboration.
           </p>
+
           <div class="hero-actions">
             <a href="#contact" class="btn-dark">Schedule a Discussion →</a>
             <a href="#platforms" class="btn-light">View Platforms ▷</a>
           </div>
+
           <div class="stats">
             <div class="stat">
               <strong>ROS</strong>
@@ -524,8 +549,9 @@
             </div>
           </div>
         </div>
+
         <div class="hero-media">
-          <img src="data:image/png;base64,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" alt="Closed-loop robotic welding monitoring" />
+          <img src="assets/images/hero-welding.png.png" alt="Closed-loop robotic welding monitoring" />
           <div class="overlay-chip chip-1"><small>Status</small>LIVE DATA MONITORING</div>
           <div class="overlay-chip chip-2"><small>Current (A)</small>257</div>
           <div class="overlay-chip chip-3"><small>Voltage (V)</small>32</div>
@@ -539,29 +565,36 @@
         <div class="section-head">
           <h2>Core solution features</h2>
           <p>
-            The platform combines robotic welding, sensing, AI, and adaptive process logic into a practical welding digitization offering.
+            The platform combines robotic welding, sensing, AI, and adaptive process logic
+            into a practical welding digitization offering.
           </p>
         </div>
+
         <div class="grid-3">
           <article class="card">
             <div class="feature-icon">🤖</div>
             <h3>ROS-Based Robotic Control</h3>
             <p>
-              Robot-oriented architecture for structured motion, programmable operations, and future integration with more advanced robotic workflows.
+              Robot-oriented architecture for structured motion, programmable operations,
+              and future integration with more advanced robotic workflows.
             </p>
           </article>
+
           <article class="card">
             <div class="feature-icon">🧠</div>
             <h3>AI-Enabled Weld Intelligence</h3>
             <p>
-              AI-assisted interpretation of welding conditions through image-based defect detection and multi-sensor monitoring logic.
+              AI-assisted interpretation of welding conditions through image-based defect
+              detection and multi-sensor monitoring logic.
             </p>
           </article>
+
           <article class="card">
             <div class="feature-icon">⚡</div>
             <h3>In-Process Adaptive Control</h3>
             <p>
-              Closed-loop support for monitoring weld states and adjusting process conditions during operation where applicable.
+              Closed-loop support for monitoring weld states and adjusting process
+              conditions during operation where applicable.
             </p>
           </article>
         </div>
@@ -574,9 +607,11 @@
           <div class="section-head">
             <h2>About SmartWeld</h2>
             <p>
-              SmartWeld positions research-backed welding digitization as a practical solution pathway for robotic welding, process visibility, and adaptive control.
+              SmartWeld positions research-backed welding digitization as a practical
+              solution pathway for robotic welding, process visibility, and adaptive control.
             </p>
           </div>
+
           <div class="card">
             <div class="mini-tag">What we offer</div>
             <h3>Welding Digitization Solution</h3>
@@ -589,14 +624,16 @@
             </ul>
           </div>
         </div>
+
         <div class="card media-card">
-          <img src="data:image/png;base64,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" alt="Closed-loop welding control panel" />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dyySWX8MILL/Djjz9y8uRJ5s+fz+TJk5k+fTrt27dn2rRpzJ8/n6VLl/L555/z1FNPcd555xEUFMSZM2f47rvvWLx4MQBbt27l3nvv5eabb+bee+/l8OHDvPzyy9x6663MmjWLrVu3MnPmTE6cOMHKlSu5+eabmTBhAosWLWLXrl0MGTKEvLw8Vq9ezeLFizl79iwzZ87k559/5sMPP2TcuHGMGzeOESNG8Nlnn/H9998zfvx4nnnmGd5++23++c9/8sEHH3D33XdjNpt59dVXef7555kzZw7XXnst7777LrNmzeKBBx7g5MmTDB06lMDAQGbOnMmxY8cYOHAgAwcO5KeffuLNN99k0KBBjB07llOnTnHrrbfy3nvv8fPPP/P999/z0ksv0dHRwZo1a7j66qv59ttv2bBhA1u3buXChQvceeedTJ06lSVLlnDbbbcxY8YMLrvsMr799lvuvPNObr75ZhoaGti6dSu7d+9m6NChbNiwgY8//piUlBR27NjBvn37GDx4MBs3buTjjz/GYDAwdepU3n33XVauXMn8+fNp165dLF++nBdeeIHTp0/T0NCAr68vzz77LI8//jizZs1i+fLlPPPMM2zcuJFt27YxderU/Pz8eO655xg4cCCLFy9m7dq1fP/99zz77LPMnDmTadOm0dDQwPXXX8+UKVN49913mThxIu+//z6ffvopd911F++++y6nTp3i008/5bPPPqO9vZ0nn3yS7du38/zzz/P6668zY8YMjh49ysSJE9m1axdHjx5l7NixTJo0iUWLFvHZZ59x1113sWvXLhYvXszzzz/PqlWr2L17N8eOHWPlypV89NFH7N69m9LSUh566CFmz57N+PHjWb16NWfOnOHkyZN88sknLF++nL1797J7926OHz/OiBEjmDBhAmPGjOGjjz6ivLycOXPmMGLECJYuXcrEiRO5/fbbGT58OGPHjuXbb79l8+bNHDt2jFWrVvHll19y3333sXjxYiZNmsSGDRuYO3cuTz/9NPPnz2f69OkcOnSIvLw8nn32Wb755hvatWtH3759+eCDDxg+fDjLli1j0qRJ7Nixg8WLF7Nq1SrWr1/Ps88+y9ixYxk+fDhHjx7l9ttvZ+nSpXz33XfceOONLF++nCeffJLVq1fz0ksvMWXKFI4ePcrkyZN57LHHmDlzJkuXLuXw4cPMmDGDlStXMmXKFBYtWsS6devYv38/ixYt4o477uDMM8/k6aef5p577mH79u1s27aNnTt3sn//fs6dO8f48eO5++67mTRpEt988w2TJk3i0KFDnDx5kp49e7Jv3z6GDx/OvHnzmD59OsuXL2fKlCnceOONrF+/nqFDh3LllVfy3Xff8eabb3L8+HE2bNjA7Nmzefrpp3nqqae4/fbbOXLkCFOnTuXw4cO8+uqrLF26lNmzZ3P33Xfz1VdfMX36dM6ePcv777/PvHnzuOyyy7jxxhtZuXIl27dvZ9euXZw8eZJXX32Vxx57jOuuu47NmzczfPhwpk6dyvTp0/n4448ZOnQol156KTNnzqSqqorZs2czevRo3nnnHT755BPy8vL47LPPWLNmDdnZ2cyfP5+DBw/S0NDAmTNn2L17N6tWrWL9+vV89tlnHDx4kMcee4zPP/+c5cuX8/TTT3PkyBEmT57M8uXLeffdd2loaGDIkCHMmjWLZcuWsW3bNiZNmsTq1at57rnnmDhxIitWrODKK6/kxIkTLF68mL/97W+88cYbTJkyhQ8//JDdu3czbNgw1q5dy7Zt20hOTmbOnDn84x//4NZbb+W1115j1KhR3HbbbSxZsoSrr76a999/n4ULF/Lyyy+zfv16Hn74YcaPH8/zzz/P3LlzefbZZ2lqauL555/nyJEjTJ06lSFDhjBnzhzWrFnDzz//zJIlS9i7dy/79u1j48aNzJw5k8mTJ9PT08PAgQOZOnUqQ4YM4cMPP2TSpElcfPHFHDp0iKSkJF577TXWrVvH8uXLmThxIlOmTOGqq67i6quv5sMPP+Tnn3/G09OT++67j969e7N69WouuOACFi9ezD333MPChQu5/fbbGT16NH369OGxxx7jww8/ZPny5YwePZq5c+eyatUqFi1axP79+5k7dy4TJkxg0qRJLFmyhOXLl/PFF1+wbt06Nm7cyPfff8/kydP5+uuvGTRoEFu3bmXJkiW8+eabTJ06lSlTpnD//ffz0ksvsWjRIq6//nrOnz/PjBkzmDBhAjNnzmTOnDmsX7+eqqoq/vrXv3LTTTfx8ssvM3ToUGbOnMncuXN57rnnuOeee9i3bx/nz5/n5MmTLF68mGPHjrF582bWrVvHkiVLWLlyJfPnz2f79u2sWbOGBx54gL179/Lqq6+yfPlyNm3axLJlyzJ79mw+/fRTpk6dyuTJk3n66aeZMWMGzz//PFdddRUffvghzz33HLt27WL58uU8+OCDLFmyhL179zJlyhTWrFnD1KlTGTRoEJMnT+aee+7h6quvZteuXfzyyy9s2LCBzz77jJUrV/LJJ59w6NChTJgwgVdffZWZM2cybNgwPvvsM9auXUtBQQGLFi3i/vvv5+jRo3z++efMnj2bTZs2ceDAAcaMGcPkyZO5+eabeeyxx3jttddYv349q1atYs2aNQwbNoyJEyfy0ksv8dZbbzF06FBeffVVJk2axNKlS/n111+ZOnUqY8eO5aWXXuLyyy9n9erVfP/99zz55JO8+uqrjBkzhmXLlnHhhRcyf/58nnzyScaPH8/w4cO59NJLmThxIosXL+b999/n6aef5rPPPsvatWs5ePAgAwYMYPr06QwePJhNmzaxfPlyvv76a+bOncugQYMYM2YMo0aN4qeffmLChAk89thjTJgwgY8//pjbb7+dxYsXM3fuXJ5++mnGjh3L5MmTeffdd7n//vt59NFH+f7773nzzTe5//77mT59OkOHDuXll1/m4MGDHD58mMOHD7N48WJKS0uZPHkyN954I1u2bOHw4cP88ssv3H333ezYsYO77rqLZcuWcf/993P48GFOnDjB0qVLeeyxx1i5ciUvvfQS48aN48wzz2T69On85z//4YsvvuCmm27i6quv5u2332b69Oncfffd7Ny5k+7ubj799FOOHj3Kli1bmD59Oq+88grPPPMMR44c4ffff2fWrFm89NJLDB48mEmTJvH111/z4osvMmLECKZNm8b//u//8vXXX/Pkk0+yY8cOZs+ezdKlS2loaOC1117j2Wef5cMPP+S9997j4MGDHDhwgOrqavr06cPSpUtZu3Yt5557LpMmTeLmm2/m1Vdf5dVXX2X58uXcd999LFq0iM2bN/Pbb7+xcuVKjhw5wpw5c5g/fz4TJ05k6dKl/P777+zfv58JEyYwbNgw3nrrLQ4cOMC9997LmjVrWLx4MZMnT2b79u0sWbKEbdu2sX37dn744QeWLl3K5MmTmT17NnPnzuX777/n0KFDzJgxg0OHDvHpp5/y4osv8t577zFq1CgeeOABFi1axIwZM5g7dy5Hjx5l+vTpTJ06lY8++ojFixfz8MMPs3jxYgYOHMhHH33E66+/zvfff8+zzz7L008/zeDBg1m0aBGPPfYYN998M2PGjOHFF19k0KBBfPHFF6xbt47Zs2fz7LPP8tBDD3Hq1CmSkpL4+eefefHFF9m4cSOpqal89dVX3HbbbTz00EOsWLGCHTt2MGTIEJ599lnWrVvH7NmzuOqqq3j00UeZMWMG0dHRbN26lWPHjrF+/XrWr1/P999/z3vvvYfVamXx4sVcfPHFvP3223z55ZdcfvnlfPDBB8ydO5f77ruPqVOnsnDhQn744Qd27NjBqlWr+Prrr7n77rt57bXXuPfee1m8eDHPP/88iYmJLFq0iJUrV9LQ0MDOnTtZt24dN910E8uXL+fJJ59k9uzZPPHEEyxYsICVK1dy4sQJ7rzzTmbOnMnkyZN57bXXWLp0KS+99BJ79+5l+fLlTJ8+nYSEBObMmcPnn3/Oe++9x+LFizl48CCrVq1i2rRpLFy4kMzMTHbu3MnWrVvZtWsX27ZtY/LkyTz44IP06dOHefPmcfHFFzN58mRef/11fv75Z4YOHcrChQv58ccfWbVqFW+++SaPP/44X375JRMmTGD58uW89dZbXHDBBTz55JNMnToVm82G0Whk27ZtTJ8+nTVr1jBmzBieffZZZs6cyQcffMDEiRO5/vrr2bBhA9OmTWPy5MksXryYxYsXc+zYMcaPH8+MGTP49ttvWbhwIY8++ijffPMNV111FbNnz+bBBx9kzpw5TJ48mT179vDggw/y+eefM3z4cLZu3crPP/9MZ2cn06ZN48orr+Tzzz9n2bJlTJgwgRtvvJHvvvuOyZMns3jxYsaMGcM777zD0aNHmT59Oq+88gqHDx/m008/5cMPP+T111/n7NmzTJ06lYkTJ3LTTTfx8MMP8/bbb/PQQw/x0Ucf8frrr/PWW29x6dIl6urq2Lx5M5s3b+a1117j1ltv5dSpU0yePJnHH3+cqVOn8v777/Ptt99y/fXXM23aND766CM2b97M+PHj2bt3LxMmTGDdunVcfPHFvPPOO7z99tv84Q9/4M9//jN79uxh9erVLFmyhOeff57f//73nD17ltWrV/PQQw9xzz33sG7dOmbPns0nn3zC1KlTef311+nr66O2tpYff/yR5cuX8+yzz/Lpp59y6NAhpk2bxh133MHy5cs5efIkZ8+eZfny5cyfP5+VK1cybdo0xo8fz4ABA1i1ahWPP/44ixcv5uTJk3nkkUd49dVXmTdvHkuXLuWTTz7hyJEjTJ48mT179vD9998zY8YMbrrpJj788EPOmDGDBQsW8NFHH3HDDTdw++23s3XrVsaOHcuECRP49NNPefrpp0lMTGT58uW8+uqr/P7778yfP5+5c+cybNgwPv/8c5YvX84NN9zA0qVL+eKLL5g3bx6TJ0/m0Ucf5dq1a1xzzTUsWLCAN954g7Vr1/L4448zfvx4vvzyS6ZNm8bTTz/NkCFD+Pbbb9m4cSOjR4/mzjvv5NFHH2Xv3r1s27aN0tJSnnjiCebNm8e2bduYN28eq1atYsGCBQwdOpQnnniC+++/n4MHD/Lqq69y+vRplixZwqRJk/j555/Zu3cvx44d48cff2Tt2rVcdtllPPjgg/z4449s2rSJxYsX8/7771NeXs7QoUNZt24d06dPZ8GCBRx99NF89NFHjBkzhqSkJO6//36mTJnC1KlTefHFFxk0aBBffPEFJ0+e5PPPP2fAgAF8/fXXPPzww7z33nt8+umnvP766wwfPpzFixdzwQUX8P333/P2229z5swZ0tPT+e6775g1axZbt27l8uXLzJ49m88//5w777yTXbt2sXDhQl555RWmTZvGqlWrWLFiBfPnzyc7O5tt27bxyCOP8NRTTzFlyhT279/PihUrWL9+PXfffTczZszgrrvuYvXq1SxcuJDBgwfzxhtv8Nlnn+Waa67h448/5s477+Sll17i5MmT3H777Xz66afMnDmT+fPns3fvXoYPH84HH3zAqFGjmDhxIocOHWLatGn8+uuvTJ8+ncmTJ7N9+3YeffRRfv/9d26//XZO
-        alt="HEC logo" />
+          <img src="assets/images/gui-panel.png.png" alt="Closed-loop welding control panel" />
           <div class="body">
             <div class="mini-tag">Digital interface</div>
             <h3>From research platform to practical workflow</h3>
             <p>
-              Program panels, run control, machine control, sensor selection, and monitoring interfaces help present the solution in a way industry partners can understand quickly.
+              Program panels, run control, machine control, sensor selection, and
+              monitoring interfaces help present the solution in a way industry partners
+              can understand quickly.
             </p>
           </div>
         </div>
@@ -608,9 +645,153 @@
         <div class="section-head">
           <h2>Featured robotic platforms</h2>
           <p>
-            Two main platform directions can be presented on the front page: the linear welding robot for controlled closed-loop trials and the robotic-arm platform for more flexible robotic welding development.
+            The website highlights practical project platforms that support solution
+            development, live monitoring, and future industrial pilots.
           </p>
         </div>
+
         <div class="grid-2">
           <article class="card media-card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAssAAAH2CAIAAABXcR+yAAAgAElEQVR4nO3de5BcdX3/8fdmZnYyE0JIQkJgQIgJGEFQ2pJxMClUUNBqY0Qv2o1UrVW0Wl9tq7Vutb3q2q7a9n1tW7u1a7Vba7bVbV3t2lZtSxkUIVQJkBCQmZBkkgSSmWQm5/7x8M/PmZlZk8mYzM7
+            <img src="assets/images/live-setup.png.png" alt="Real-time weld monitoring setup" />
+            <div class="body">
+              <div class="mini-tag">Platform 1</div>
+              <h3>Live Monitoring Welding Cell</h3>
+              <p>
+                Suitable for real-time defect detection, data acquisition, process
+                visibility, and practical monitoring demonstrations.
+              </p>
+            </div>
+          </article>
+
+          <article class="card media-card">
+            <img src="assets/images/robotic-arm.png.png" alt="Robotic arm welding setup" />
+            <div class="body">
+              <div class="mini-tag">Platform 2</div>
+              <h3>Robotic Arm Welding Setup</h3>
+              <p>
+                A flexible robotic direction for future welding automation, demonstrative
+                pilots, and commercialization-oriented solution development.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology">
+      <div class="container">
+        <div class="section-head">
+          <h2>Technology pillars</h2>
+          <p>
+            The offering is strongest when presented around a few clear pillars rather
+            than too many technical details on the homepage.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card media-card">
+            <img src="assets/images/senseweldpro.png.png" alt="SenseWeldPro architecture" />
+            <div class="body">
+              <div class="mini-tag">Monitoring architecture</div>
+              <h3>Multi-Sensor Monitoring</h3>
+              <p>
+                Combines image, acoustic, hall-sensor, thermal, and validation-oriented
+                sensing logic for deeper process insight.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="mini-tag">Technology stack</div>
+            <h3>What powers the solution</h3>
+            <ul class="list">
+              <li>ROS-oriented robotic workflow support</li>
+              <li>AI-based weld-state and defect interpretation</li>
+              <li>In-process monitoring and control logic</li>
+              <li>GUI-driven workflow visibility</li>
+              <li>Multi-sensor data capture and validation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <div class="section-head">
+          <h2>Commercialization pathway</h2>
+          <p>
+            A simple roadmap helps present the platform as solution-oriented while
+            remaining realistic for a university-based offering.
+          </p>
+        </div>
+
+        <div class="roadmap">
+          <div class="step">
+            <strong>1. Website Presence</strong>
+            Present the solution, platforms, publications, and contact path through a
+            professional digital front door.
+          </div>
+          <div class="step">
+            <strong>2. Capability Packaging</strong>
+            Prepare brochures, application notes, demo videos, and visual material for
+            external stakeholders.
+          </div>
+          <div class="step">
+            <strong>3. Partner Discussions</strong>
+            Engage prospective industrial partners for pilot dialogue, technical review,
+            and opportunity mapping.
+          </div>
+          <div class="step">
+            <strong>4. Pilot Validation</strong>
+            Offer small collaborative trials for selected welding problems and monitoring studies.
+          </div>
+          <div class="step">
+            <strong>5. Funding Support</strong>
+            Seek external support to mature the research prototype toward a stronger
+            technology prototype.
+          </div>
+          <div class="step">
+            <strong>6. Transfer Path</strong>
+            Move toward service contracts, licensing, or another university-approved
+            commercialization route.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-band">
+          <div class="grid-2">
+            <div>
+              <h2 style="margin-top:0; color:#fff;">Let’s discuss your welding digitization need</h2>
+              <p>
+                Use this channel for pilot discussions, robotic welding collaboration,
+                adaptive control studies, and industrial or academic engagement around SmartWeld.
+              </p>
+            </div>
+
+            <div>
+              <p><strong>Contact:</strong> Dr. Salman Hussain</p>
+              <p><strong>Email:</strong> salman.hussain@uettaxila.edu.pk</p>
+              <p><strong>Institution:</strong> Department of Industrial Engineering, UET Taxila</p>
+
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:18px;">
+                <a href="mailto:salman.hussain@uettaxila.edu.pk" class="btn-dark">Send Email</a>
+                <a href="mailto:salman.hussain@uettaxila.edu.pk?subject=SmartWeld Consultation Request" class="btn-light">Request a Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Welding Digitization Solutions · SmartWeld · Built on research outcomes from UET Taxila
+    </div>
+  </footer>
+</body>
+</html>
